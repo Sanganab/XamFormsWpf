@@ -1,0 +1,26 @@
+﻿<Window x:Class="XamFormsWpf.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XamFormsWpf.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="{Binding Hello}" />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="First Name" />
+                <TextBox Text="{Binding ContactFirstName, Mode=TwoWay}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Last Name" />
+                <TextBox Text="{Binding ContactLastName, Mode=TwoWay}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Email" />
+                <TextBox Text="{Binding ContactEmail, Mode=TwoWay}" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

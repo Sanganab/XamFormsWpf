@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamFormsWpf"
+             x:Class="XamFormsWpf.MainPage">
+  <StackLayout>
+    <Label Text="{Binding Hello}" />
+    <StackLayout Orientation="Horizontal">
+      <Label Text="First Name" />
+      <Entry Text="{Binding ContactFirstName, Mode=TwoWay}" />
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Last Name" />
+      <Entry Text="{Binding ContactLastName, Mode=TwoWay}" />
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Email" />
+      <Entry Text="{Binding ContactEmail, Mode=TwoWay}" />
+    </StackLayout>
+  </StackLayout>
+</ContentPage>
