@@ -113,7 +113,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\XamFormsWpf.Core\XamFormsWpf.Core.csproj">
+    <ProjectReference Include="..\XamFormsWpf.Core\XamFormsWpf.Core.csproj">
       <Project>{4b6a7242-35f0-49c3-a712-9935011248ff}</Project>
       <Name>XamFormsWpf.Core</Name>
     </ProjectReference>
